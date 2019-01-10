@@ -16,4 +16,3 @@ ctx.fillRect(0, 0, c.width, c.height);
 ctx.moveTo(0, 0);
 ctx.lineTo(c.width, c.height);
 ctx.stroke();
-
