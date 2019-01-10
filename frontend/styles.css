@@ -21,47 +21,15 @@ body {
 }
 
 #grid-item-banner {
-  display: none;
-}
-
-#grid-item-main {
   grid-row-start: 1;
   grid-row-end: 2;
   grid-column-start: 1;
-  grid-column-end: 2;
-
-}
-
-#grid-item-userlist {
-  display: none;
+  grid-column-end: 3;
 }
 
 @media (min-width: 1025px) {
   .grid-container {
     grid-template-columns: 10em auto;
     grid-template-rows: 10em auto;
-  }
-
-  #grid-item-banner {
-    display: block;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    grid-column-start: 1;
-    grid-column-end: 3;
-  }
-  #grid-item-main {
-    display: block;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    grid-column-start: 2;
-    grid-column-end: 3;
-
-  }
-  #grid-item-userlist {
-    display: block;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    grid-column-start: 1;
-    grid-column-end: 2;
   }
 }
