@@ -13,18 +13,28 @@
 </head>
 
 <body>
-  <div class="grid-container">
-	  <div class="grid-item" id="grid-item-banner"></div>
-	  <div class="grid-item" id="grid-item-main">
-      <canvas id="main-canvas"></canvas>
+  <div class="page-container">
+    <div id="switch-container">
+      <label class="switch">
+          <input type="checkbox" id="layout-switch"/>
+          <span class="slider"></span>
+      </label>
     </div>
-	  <div class="grid-item" id="grid-item-userlist">
-      <ul>
-        <li>Erkka</li>
-        <li>Petri</li>
-      </ul>
+    <div class="app-container">
+      <div class="grid-container">
+        <div class="grid-item" id="grid-item-banner"></div>
+        <div class="grid-item" id="grid-item-main">
+          <canvas id="main-canvas"></canvas>
+        </div>
+        <div class="grid-item" id="grid-item-userlist">
+          <ul>
+            <li>Erkka</li>
+            <li>Petri</li>
+          </ul>
+        </div>
+      </div> 
     </div>
-	</div> 
-  <script src="scripts.js"></script>
+    <script src="scripts.js"></script>
+  </div>
 </body>
 </html>
