@@ -21,7 +21,6 @@
       divBanner.style.display = "block";
       divUserlist.style.display = "block";
       divMain.style.display = "block";
-      
       divSwitch.style.display = "none";
 
       divMain.style.gridRowStart = 2;
@@ -35,10 +34,12 @@
       
 	} else {
       console.log('Going to mobile!');
+
       divBanner.style.display = "none";
       divUserlist.style.display = "block";
       divMain.style.display = "block";
       divSwitch.style.display  = "block";
+
       if (mobileState == 'main') {
         divUserlist.style.display = "none";
         divMain.style.gridRowStart = 1;
@@ -77,6 +78,7 @@
   var x = window.matchMedia("(min-width: 1025px)");
   layoutChangeFromQuery(x);
   x.addListener(layoutChangeFromQuery);
+
   var layoutToggle = document.getElementById('layout-switch');
   layoutToggle.checked = false;
   layoutToggle.addEventListener('change', layoutChangeFromToggle);

@@ -104,6 +104,7 @@ input:checked + .slider:before {
   border-radius: 50%;
 } 
 
+/* for desktops */
 @media (min-width: 1025px) {
   .grid-container {
     grid-template-columns: 10em auto;
